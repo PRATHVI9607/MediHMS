@@ -105,7 +105,7 @@ It is built as a **monorepo**: a single repository containing two applications �
 ## 4. High-Level Architecture
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#9A7A2E','secondaryColor':'#A8DFF0','fontFamily':'Plus Jakarta Sans'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#9A7A2E','secondaryColor':'#A8DFF0'}}}%%
 flowchart TB
     subgraph B["🖥️ Browser (React SPA)"]
         PAGES["Pages + Components"]
@@ -138,7 +138,7 @@ flowchart TB
 ## 5. The Data Model (ER Schema) Explained
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#3A8FA8','fontFamily':'Plus Jakarta Sans'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#3A8FA8'}}}%%
 erDiagram
     DEPARTMENT ||--o{ DOCTOR : "BELONGS_TO"
     DOCTOR ||--o{ APPOINTMENT : "HAS"
@@ -281,7 +281,7 @@ apps/web/src/
 What happens when an Admin clicks **"Create"** on a new doctor:
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','actorBkg':'#E8D080','actorBorder':'#9A7A2E','signalColor':'#3A8FA8','fontFamily':'Plus Jakarta Sans'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','actorBkg':'#E8D080','actorBorder':'#9A7A2E','signalColor':'#3A8FA8'}}}%%
 sequenceDiagram
     actor U as Admin
     participant F as React form
@@ -326,7 +326,7 @@ To switch to MySQL: `docker compose up -d`, then set `DB_CLIENT=mysql` in `apps/
 ## 10. Security & Roles
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#F5EFD8','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#9A7A2E','fontFamily':'Plus Jakarta Sans'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#F5EFD8','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#9A7A2E'}}}%%
 flowchart TD
     REQ["Incoming request"] --> AUTH{Valid JWT?}
     AUTH -->|no| R401["401 Unauthenticated"]

@@ -34,7 +34,7 @@ A premium, full-stack **Hospital Data Management System** — Cream × Gold × S
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{
   'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C',
-  'lineColor':'#9A7A2E','secondaryColor':'#A8DFF0','tertiaryColor':'#F5EFD8','fontFamily':'Plus Jakarta Sans'}}}%%
+  'lineColor':'#9A7A2E','secondaryColor':'#A8DFF0','tertiaryColor':'#F5EFD8'}}}%%
 flowchart TB
     subgraph CLIENT["🖥️ Browser — React SPA"]
         UI["Dashboard · Tables · Forms"]
@@ -79,7 +79,7 @@ flowchart TB
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{
   'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C',
-  'lineColor':'#3A8FA8','fontFamily':'Plus Jakarta Sans'}}}%%
+  'lineColor':'#3A8FA8'}}}%%
 erDiagram
     DEPARTMENT ||--o{ DOCTOR : "BELONGS_TO"
     DOCTOR ||--o{ APPOINTMENT : "HAS"
@@ -123,7 +123,7 @@ erDiagram
 ### Relationship cardinality
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#E8D080','primaryTextColor':'#2C2410','primaryBorderColor':'#9A7A2E','lineColor':'#3A8FA8','fontFamily':'Plus Jakarta Sans'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#E8D080','primaryTextColor':'#2C2410','primaryBorderColor':'#9A7A2E','lineColor':'#3A8FA8'}}}%%
 flowchart LR
     DEPT["🏢 DEPARTMENT"] -->|"1 : N · total"| DOC["🩺 DOCTOR"]
     DOC -->|"1 : N · total"| APPT["📅 APPOINTMENT"]
@@ -143,7 +143,7 @@ flowchart LR
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{
   'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C',
-  'actorBkg':'#E8D080','actorBorder':'#9A7A2E','signalColor':'#3A8FA8','fontFamily':'Plus Jakarta Sans'}}}%%
+  'actorBkg':'#E8D080','actorBorder':'#9A7A2E','signalColor':'#3A8FA8'}}}%%
 sequenceDiagram
     actor U as User
     participant W as React App
@@ -165,7 +165,7 @@ sequenceDiagram
 ### Role → permission matrix
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#F5EFD8','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#9A7A2E','fontFamily':'Plus Jakarta Sans'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#F5EFD8','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#9A7A2E'}}}%%
 flowchart TD
     R{Role?}
     R -->|Admin| AD["✅ Full CRUD<br/>✅ SQL DML"]
@@ -184,7 +184,7 @@ flowchart TD
 ## 🧭 SQL Console Request Lifecycle
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#3A8FA8','fontFamily':'Plus Jakarta Sans'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#3A8FA8'}}}%%
 flowchart LR
     Q["⌨️ SQL in CodeMirror"] --> EX["POST /query/execute"]
     EX --> CL{Classify}

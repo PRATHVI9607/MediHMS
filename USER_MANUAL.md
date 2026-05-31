@@ -47,7 +47,7 @@ npm run dev                              # starts API + web together
 The database **auto-creates and seeds** itself the first time you start the server.
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#9A7A2E','fontFamily':'Plus Jakarta Sans'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#9A7A2E'}}}%%
 flowchart LR
     A["npm install"] --> B["copy .env"]
     B --> C["npm run dev"]
@@ -72,7 +72,7 @@ On the login screen, click a **demo chip** (Admin / Doctor / Viewer) to auto-fil
 | 👁️ **Viewer** | `viewer@medivault.io` | Read-only · run `SELECT` queries |
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#F5EFD8','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#9A7A2E','fontFamily':'Plus Jakarta Sans'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#F5EFD8','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#9A7A2E'}}}%%
 flowchart TD
     L["🔑 Login screen"] --> P{Pick role}
     P -->|Admin| A["Full control"]
@@ -161,7 +161,7 @@ The **Appts** badge shows how many appointments each doctor has.
 ## 8. Managing Appointments
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#3A8FA8','fontFamily':'Plus Jakarta Sans'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#3A8FA8'}}}%%
 flowchart LR
     N["➕ Book Appointment"] --> S["Select patient + doctor"]
     S --> AUTO["Department auto-fills<br/>from doctor"]
@@ -200,7 +200,7 @@ flowchart LR
 ## 10. The SQL Console
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#3A8FA8','fontFamily':'Plus Jakarta Sans'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#FFFDF7','primaryTextColor':'#2C2410','primaryBorderColor':'#C9A84C','lineColor':'#3A8FA8'}}}%%
 flowchart LR
     W["⌨️ Write SQL"] --> RUN["Run · Ctrl/⌘+Enter"]
     RUN --> CHK{Allowed?}
