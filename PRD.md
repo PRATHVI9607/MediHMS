@@ -223,7 +223,7 @@ INSERT INTO APPOINTMENT_DETAIL (detail_id, appointment_id, consultation_fee, rem
   (1, 5, 0.00,   'Patient did not arrive. Rescheduling advised.');
 ```
 
-### 3.4 Common Query Reference
+### 3.4 Common Query Reference 
 
 ```sql
 -- Q1: All doctors in a department
